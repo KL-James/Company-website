@@ -1,0 +1,151 @@
+body, th, td, input, select, textarea, button { font:12px/1.5em ,"å®‹ä½“", Arial, "ucida Grande",Verdana, Helvetica,sans-serif; color:#000; }
+body, h1, h2, h3, h4, h5, h6, p, ul, dl, dt, dd, form, fieldset { margin: 0; padding: 0; font-size:1rem;}
+h1, h2, h3, h4, h5, h6 { font-size: 1.2rem; }
+ul li { list-style: none; }
+ol{ margin:0px; padding:0px; }
+a { color:#034abc; text-decoration: none;}
+a:hover {color:#034abc; text-decoration:none;}
+img { border: none; margin:0px; padding:0px;vertical-align: bottom}
+html,body{-webkit-text-size-adjust:none;}
+body{ overflow-x:hidden;_overflow-x:hidden; background-color:#f5f5f5;}
+.clear{ clear:both; overflow:hidden; line-height:0; margin:0; padding:0;}
+
+.main{ max-width:690px;	margin:auto; overflow:hidden; background-color:#FFF;}
+.main img{ width:100%; display:inline;display:block;margin:0px;}
+.main .table{ width:100%; top:0px; position:fixed;}
+.main .table td{ width:20%; padding:5px; text-align:center; border:1px solid #FFF;}
+.main .table td a{ color:#FFF;}
+
+.box {
+    max-width: 690px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-weight: bold;
+    background: rgba(243, 243, 243, 243);
+}
+
+.animate {
+    padding-left: 20px;
+    font-size: 14px;
+    color: rgb(4, 82, 191);
+    display: inline-block;
+    white-space: nowrap;
+    animation: 10s wordsLoop linear infinite normal;
+}
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes wordsLoop {
+    0% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+.iconTop{
+    display: inline-block;
+    width: 14%;
+    height: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.iconMenu{
+    text-align: center;
+}
+ul,li,ol {
+    list-style-type: none;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+  }
+/* 轮播图最外层盒子 */
+  .carousel ul {
+    /* 这个高度需要在JS里面动态添加 */
+  }
+
+  .carousel ul li {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* 使用 transform:translaX(300%) 暂时将 li 移动到屏幕外面去*/
+    -webkit-transform: translateX(300%);
+    transform: translateX(300%);
+  }
+
+  /* 小圆点盒子 */
+  .carousel .points {
+    /* 未知宽度的盒子，使用 absolute 定位，结合 transform 的方式进行居中 */
+    display:table;
+    text-align:center;
+    width: 100%;
+  }
+
+  /* 小圆点 */
+  .carousel .points li {
+    color: black;
+    background: rgb(234, 242, 253);
+    float: left;
+    padding: 3px 3px;
+    width: 48%;
+    font-size: 14px;
+  }
+  #id-4,#id-5{
+    margin-bottom: 2%;
+  }
+  #id-4,#id-6{
+    margin-right: 2%;
+  }
+
+  /* 选中小圆点的样式类 */
+  .carousel .points li.active {
+    background-color: rgb(76, 150, 255);
+    color: white;
+  }
+
+  .Box{
+    width: 100%;
+    margin: auto;
+    padding: 0px 3%;
+}
+.con{
+    width: 100%;
+    height: 100%;
+    color: grey;
+    display:none;
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+    border: 1px solid rgb(181, 181, 181);
+}
+.current{
+    background-color: rgb(76, 150, 255);
+    color: white;
+}
+.button{
+  background-color: rgb(234, 242, 253);
+  color: black;
+  
+}
+.bottom-bar {
+  position: fixed;
+  bottom: -2px;
+}
+.bottom-bar img {
+  float: left;
+  width: 20%;
+  height: 20%;
+}
